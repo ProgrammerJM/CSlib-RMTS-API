@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional Lock File
+# Uncomment if you decide not to include package-lock.json
+# package-lock.json
+
+# Build Directory (if applicable)
+# dist/
+# build/
+
+# Miscellaneous
+# Ignore request.rest if it's not needed by others
+# request.rest
