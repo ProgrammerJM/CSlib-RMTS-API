@@ -1,1 +1,1 @@
-console.log("hello from middleware");
+console.log("reserved for middlewares");
