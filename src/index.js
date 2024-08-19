@@ -5,11 +5,11 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-const userRoute = require("./api/routes/User");
-const getUsers = require("./api/routes/GetUsers");
+const userRoute = require("./api/routes/userRoutes");
+const bookRoute = require("./api/routes/bookRoutes");
 
 app.use("/api/user", userRoute);
-app.use("/api/getUsers", getUsers);
+app.use("/api/books", bookRoute);
 
 app.listen(5000, () => {
   console.log("Server is running on port 5000");
