@@ -1,11 +1,11 @@
 const bookModel = require("../models/bookModel");
 
-const getAllBookRequest = async () => {
+const getAllBookRequestService = async () => {
   return await bookModel.getAllBookRequest();
 };
 
-const postBookRequest = async (book) => {
+const postBookRequestService = async (book) => {
   return await bookModel.postBookRequest(book);
 };
 
-module.exports = { getAllBookRequest, postBookRequest };
+module.exports = { getAllBookRequestService, postBookRequestService };
