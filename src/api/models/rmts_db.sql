@@ -1,5 +1,5 @@
 CREATE TABLE "users" (
-  "id" SERIAL PRIMARY KEY,
+  "user_uid" UUID PRIMARY KEY,
   "username" varchar(255) NOT NULL,
   "password" varchar(255) NOT NULL,
   "role" varchar(100) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE "users" (
 );
 
 CREATE TABLE "requests" (
-  "id" SERIAL PRIMARY KEY,
+  "request_uid" PRIMARY KEY,
   "status" varchar(100) NOT NULL,
   "date_received" date NOT NULL,
   "book_request_sources" text NOT NULL,
@@ -23,5 +23,4 @@ CREATE TABLE "requests" (
   "updated_book_fund" boolean DEFAULT false,
   "updated_by" varchar(255),
   "last_remarks" text,
-  "user_id" int
 );
