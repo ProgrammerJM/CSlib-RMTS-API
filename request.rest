@@ -16,3 +16,6 @@ Content-Type: application/json
     "username": "Test User",
     "password": "testpassword1"
 }
+
+###
+GET http://localhost:5000/api/book/request
